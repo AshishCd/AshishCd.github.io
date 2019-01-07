@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wheel Spinner</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <div>
+        <div class="wrapper">
+            <div class="main">
+                <div class="left-div">
+                    <div class="segmentsWrapper">
+                        <div class="segmentText">
+                            Number of Segments
+                        </div>
+                        <div class="segments">
+                            <button type="button" class="segmentButtons" onClick="noSegment(4)">4</button>
+                            <button type="button" class="segmentButtons" onClick="noSegment(6)">6</button>
+                            <button type="button" class="segmentButtons" onClick="noSegment(8)">8</button>
+                            <button type="button" class="segmentButtons" onClick="noSegment(10)">10</button>
+                            <button type="button" class="segmentButtons active" onClick="noSegment(12)">12</button>
+                        </div>
+                    </div>
+                    <button type="button" id="spin_button" class="spin-button" onClick="startSpin();">Spin</button>
+                </div>
+                <div class="right-div">
+                    <canvas id="pin" class="pinClass"></canvas>
+                    <canvas id="myCanvas" class="canvasClass"></canvas>
+                    <canvas id="resultCanvas"></canvas>
+                    <audio id="audioId">
+                        <source src="./Audio/spinning.mp3" type="audio/mpeg">
+                    </audio>
+                    <audio id="dingId">
+                        <source src="./Audio/ding.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="Wheelscript.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.4.0/math.min.js"></script>
+</body>
+
+</html>
