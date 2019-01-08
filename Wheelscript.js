@@ -43,7 +43,7 @@ const RotateFunc = () => {
   const RotateNow = Math.round(Math.random() * 12) + 1; 
   const random = Math.round(Math.random() * 16) + 1;   
   if (lastdegree === 0) {     
-    return 360 * random + 360 / RotateNow + 30;    
+    return 360 * random + 360 / RotateNow + 15;    
   }  
   return lastdegree + 360 * random + 360 / RotateNow; //never reverse 
 };
