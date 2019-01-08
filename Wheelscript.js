@@ -256,7 +256,7 @@ const noSegment = (val) => {
   var MyCircleChart1 = new circleChart({
     canvas: myCanvas,
     data: myData,
-    colors: ["#fde23e", "#f16e23", "#57d9ff", "#937e88", "#FFA500"],
+    colors: ["#fde23e", "#f16e23", "#57d9ff", "#937e88", "#FFA500", "#A9A9A9"],
     chartHole: 0.7
   });
 
